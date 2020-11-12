@@ -15,6 +15,8 @@ public class Artist {
     @Column(unique = true)
     private String name;
 
+    private String cover_art_url;
+
     public Long getId() {
         return id;
     }
@@ -29,5 +31,13 @@ public class Artist {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCover_art_url() {
+        return cover_art_url;
+    }
+
+    public void setCover_art_url(String cover_art_url) {
+        this.cover_art_url = cover_art_url;
     }
 }
